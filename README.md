@@ -2,6 +2,10 @@
 
 A fan menu done in AngularJS. It accepts an array of items which represent the menu items
 
+## Preview
+
+![Fan menu preview](https://raw.githubusercontent.com/mstaicu/fan-menu/master/preview-fan-menu.gif)
+
 ## Installation
 
 1. Make sure you have npm installed

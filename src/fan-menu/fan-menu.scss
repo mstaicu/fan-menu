@@ -1,0 +1,29 @@
+@mixin transition($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
+fan-menu {
+  display: block;
+  .main-button {
+    position: absolute;
+    border-radius: 50%;
+    background-color: #9b59b6;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    color: #ffffff;
+    cursor: pointer;
+  }
+  .child-button {
+    position: absolute;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 1px 3px;
+    color: #8898A5;
+    @include transition(left 0.5s ease-in-out, top 0.5s ease-in-out, opacity 1s ease-in);
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

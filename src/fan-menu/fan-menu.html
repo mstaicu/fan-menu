@@ -1,0 +1,4 @@
+<div ng-repeat="menuItem in menuItems" class="child-button" ng-style="isOpened ? getFinalChildButtonStyles($index) : getInitialChildButtonStyles()" ng-click="closeMenu()">
+</div>
+<div class="main-button" ng-style="getMainButtonStyles()" ng-click="toggleMenu()">
+</div>
